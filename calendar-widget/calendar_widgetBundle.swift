@@ -8,9 +8,12 @@
 import WidgetKit
 import SwiftUI
 
-@main
-struct calendar_widgetBundle: WidgetBundle {
+import WidgetKit
+import SwiftUI
+
+struct CalendarWidgetBundle: WidgetBundle {
+    @WidgetBundleBuilder
     var body: some Widget {
-        calendar_widget()
+        CalendarWidget()
     }
 }

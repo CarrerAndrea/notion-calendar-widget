@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct notion_calendar_widgetApp: App {
+struct NotionCalendarWidgetApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
