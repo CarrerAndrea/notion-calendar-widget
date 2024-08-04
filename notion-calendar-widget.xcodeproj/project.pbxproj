@@ -11,7 +11,37 @@
 		15C469692C5FABA00005836C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C469682C5FABA00005836C /* ContentView.swift */; };
 		15C4696B2C5FABA10005836C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C4696A2C5FABA10005836C /* Assets.xcassets */; };
 		15C4696E2C5FABA10005836C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C4696D2C5FABA10005836C /* Preview Assets.xcassets */; };
+		15C4697C2C5FAC070005836C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C4697B2C5FAC070005836C /* WidgetKit.framework */; };
+		15C4697E2C5FAC070005836C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C4697D2C5FAC070005836C /* SwiftUI.framework */; };
+		15C469812C5FAC070005836C /* calendar_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C469802C5FAC070005836C /* calendar_widgetBundle.swift */; };
+		15C469832C5FAC070005836C /* calendar_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C469822C5FAC070005836C /* calendar_widget.swift */; };
+		15C469852C5FAC080005836C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C469842C5FAC080005836C /* Assets.xcassets */; };
+		15C4698A2C5FAC080005836C /* calendar-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 15C469792C5FAC070005836C /* calendar-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15C469882C5FAC080005836C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15C4695B2C5FABA00005836C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15C469782C5FAC070005836C;
+			remoteInfo = "calendar-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15C4698E2C5FAC080005836C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				15C4698A2C5FAC080005836C /* calendar-widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		15C469632C5FABA00005836C /* notion-calendar-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notion-calendar-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +50,14 @@
 		15C4696A2C5FABA10005836C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15C4696D2C5FABA10005836C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15C4696F2C5FABA10005836C /* notion_calendar_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = notion_calendar_widget.entitlements; sourceTree = "<group>"; };
+		15C469792C5FAC070005836C /* calendar-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "calendar-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C4697B2C5FAC070005836C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		15C4697D2C5FAC070005836C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		15C469802C5FAC070005836C /* calendar_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar_widgetBundle.swift; sourceTree = "<group>"; };
+		15C469822C5FAC070005836C /* calendar_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar_widget.swift; sourceTree = "<group>"; };
+		15C469842C5FAC080005836C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15C469862C5FAC080005836C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C469872C5FAC080005836C /* calendar_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = calendar_widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15C469762C5FAC070005836C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C4697E2C5FAC070005836C /* SwiftUI.framework in Frameworks */,
+				15C4697C2C5FAC070005836C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				15C469652C5FABA00005836C /* notion-calendar-widget */,
+				15C4697F2C5FAC070005836C /* calendar-widget */,
+				15C4697A2C5FAC070005836C /* Frameworks */,
 				15C469642C5FABA00005836C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				15C469632C5FABA00005836C /* notion-calendar-widget.app */,
+				15C469792C5FAC070005836C /* calendar-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +119,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		15C4697A2C5FAC070005836C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15C4697B2C5FAC070005836C /* WidgetKit.framework */,
+				15C4697D2C5FAC070005836C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15C4697F2C5FAC070005836C /* calendar-widget */ = {
+			isa = PBXGroup;
+			children = (
+				15C469802C5FAC070005836C /* calendar_widgetBundle.swift */,
+				15C469822C5FAC070005836C /* calendar_widget.swift */,
+				15C469842C5FAC080005836C /* Assets.xcassets */,
+				15C469862C5FAC080005836C /* Info.plist */,
+				15C469872C5FAC080005836C /* calendar_widget.entitlements */,
+			);
+			path = "calendar-widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +150,34 @@
 				15C4695F2C5FABA00005836C /* Sources */,
 				15C469602C5FABA00005836C /* Frameworks */,
 				15C469612C5FABA00005836C /* Resources */,
+				15C4698E2C5FAC080005836C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				15C469892C5FAC080005836C /* PBXTargetDependency */,
 			);
 			name = "notion-calendar-widget";
 			productName = "notion-calendar-widget";
 			productReference = 15C469632C5FABA00005836C /* notion-calendar-widget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		15C469782C5FAC070005836C /* calendar-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C4698B2C5FAC080005836C /* Build configuration list for PBXNativeTarget "calendar-widgetExtension" */;
+			buildPhases = (
+				15C469752C5FAC070005836C /* Sources */,
+				15C469762C5FAC070005836C /* Frameworks */,
+				15C469772C5FAC070005836C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calendar-widgetExtension";
+			productName = "calendar-widgetExtension";
+			productReference = 15C469792C5FAC070005836C /* calendar-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +190,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					15C469622C5FABA00005836C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					15C469782C5FAC070005836C = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -118,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				15C469622C5FABA00005836C /* notion-calendar-widget */,
+				15C469782C5FAC070005836C /* calendar-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +223,14 @@
 			files = (
 				15C4696E2C5FABA10005836C /* Preview Assets.xcassets in Resources */,
 				15C4696B2C5FABA10005836C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C469772C5FAC070005836C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C469852C5FAC080005836C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +246,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15C469752C5FAC070005836C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C469812C5FAC070005836C /* calendar_widgetBundle.swift in Sources */,
+				15C469832C5FAC070005836C /* calendar_widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15C469892C5FAC080005836C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15C469782C5FAC070005836C /* calendar-widgetExtension */;
+			targetProxy = 15C469882C5FAC080005836C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		15C469702C5FABA10005836C /* Debug */ = {
@@ -268,6 +387,7 @@
 		15C469732C5FABA10005836C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "notion-calendar-widget/notion_calendar_widget.entitlements";
@@ -295,6 +415,7 @@
 		15C469742C5FABA10005836C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "notion-calendar-widget/notion_calendar_widget.entitlements";
@@ -319,6 +440,62 @@
 			};
 			name = Release;
 		};
+		15C4698C2C5FAC080005836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "calendar-widget/calendar_widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4YS97TJMS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "calendar-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "calendar-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "caber.notion-calendar-widget.calendar-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		15C4698D2C5FAC080005836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "calendar-widget/calendar_widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4YS97TJMS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "calendar-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "calendar-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "caber.notion-calendar-widget.calendar-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +513,15 @@
 			buildConfigurations = (
 				15C469732C5FABA10005836C /* Debug */,
 				15C469742C5FABA10005836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C4698B2C5FAC080005836C /* Build configuration list for PBXNativeTarget "calendar-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C4698C2C5FAC080005836C /* Debug */,
+				15C4698D2C5FAC080005836C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
